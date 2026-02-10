@@ -1,14 +1,4 @@
 <!DOCTYPE html>
-
-<html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-	<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -31,69 +21,55 @@
     <div class="form-group">
       <label for="first-name-input">First Name</label>
       <input type="text" class="form-control" id="first-name-input" placeholder="Enter first name" required>
-      <div class="invalid-feedback">
-        Please provide a valid first name.
-      </div>
+      <div class="invalid-feedback">Please provide a valid first name.</div>
     </div>
 
     <!-- Last Name -->
     <div class="form-group">
       <label for="last-name-input">Last Name</label>
       <input type="text" class="form-control" id="last-name-input" placeholder="Enter last name" required>
-      <div class="invalid-feedback">
-        Please provide a valid last name.
-      </div>
+      <div class="invalid-feedback">Please provide a valid last name.</div>
     </div>
 
     <!-- Email -->
     <div class="form-group">
       <label for="email-input">Email</label>
       <input type="email" class="form-control" id="email-input" placeholder="Enter email" required>
-      <div class="invalid-feedback">
-        Please provide a valid email.
-      </div>
+      <div class="invalid-feedback">Please provide a valid email.</div>
     </div>
 
     <!-- College Name -->
     <div class="form-group">
       <label for="college-input">College Name</label>
       <input type="text" class="form-control" id="college-input" placeholder="Enter college name" required>
-      <div class="invalid-feedback">
-        Please provide a valid college name.
-      </div>
+      <div class="invalid-feedback">Please provide a valid college name.</div>
     </div>
 
     <!-- Roll Number -->
     <div class="form-group">
       <label for="roll-no-input">Roll Number</label>
       <input type="text" class="form-control" id="roll-no-input" placeholder="Enter roll number" required>
-      <div class="invalid-feedback">
-        Please provide a valid roll number.
-      </div>
+      <div class="invalid-feedback">Please provide a valid roll number.</div>
     </div>
 
     <!-- Graduation Year -->
     <div class="form-group">
-      <label for="graduation-year">Graduation Year</label>
-      <select class="form-control" id="graduation-year" required>
+      <label for="grad-year-select">Graduation Year</label>
+      <select class="form-control" id="grad-year-select" required>
         <option value="">Select Year</option>
         <option value="2020">2020</option>
         <option value="2021">2021</option>
         <option value="2022">2022</option>
         <option value="2023">2023</option>
       </select>
-      <div class="invalid-feedback">
-        Please select your graduation year.
-      </div>
+      <div class="invalid-feedback">Please select your graduation year.</div>
     </div>
 
     <!-- Conditions Checkbox -->
     <div class="form-group form-check">
       <input type="checkbox" class="form-check-input" id="conditions-checkbox" required>
       <label class="form-check-label" for="conditions-checkbox">I agree to the terms and conditions</label>
-      <div class="invalid-feedback">
-        You must agree before submitting.
-      </div>
+      <div class="invalid-feedback">You must agree before submitting.</div>
     </div>
 
     <!-- Submit Button -->
@@ -102,12 +78,12 @@
 </div>
 
 <script>
-  // Bootstrap 4 custom form validation
+  // Bootstrap 4 custom validation
   (function() {
     'use strict';
     var form = document.getElementById('intern-form');
     form.addEventListener('submit', function(event) {
-      if (form.checkValidity() === false) {
+      if (!form.checkValidity()) {
         event.preventDefault();
         event.stopPropagation();
       }
@@ -121,11 +97,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
-</html>
-
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
 </html>
